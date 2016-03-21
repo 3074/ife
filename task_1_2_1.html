@@ -1,0 +1,437 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>撸一发@Task_1_2</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        background-color: #dcdcdc;
+        font-family: 'Microsoft YaHei','Hiragino Sans GB',Helvetica,Arial,'Lucida Grande',sans-serif;
+        min-width: 700px;
+      }
+
+      .header {
+        background-color: #353535;
+        width: 100%;
+        height: 70px;
+      }
+
+      .header a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .heaser a:hover {
+        color: red;
+      }
+
+      .header img {
+        height: 50px;
+        width: auto;
+        margin: 10px;
+      }
+
+      .header-right {
+        float: right;
+      }
+
+      .header-right ul {
+        position: relative;
+        height: 70px;
+        line-height: 70px;
+        margin: 0 20px 0;
+      }
+
+      .header-right ul li {
+        float: left;
+        margin-left: 30px;
+        font-size: 15px;
+      }
+
+      article {
+        width: 95%;
+        background-color: white;
+        margin: 20px auto;
+        padding: 15px;
+        border: 1px solid darkgray;
+        box-shadow: 1px 1px dimgray;
+        line-height: 30px;
+      }
+
+      h3 {
+        color: dimgray;
+        margin: 8px 0 0 0;
+      }
+
+      .author {
+        color: grey;
+        width: 200px;
+        height: 20px;
+        font-size: 14px;
+      }
+
+      article p {
+        text-indent: 2em;
+      }
+
+      article ul li {
+        list-style-type: none;
+      }
+
+      figure {
+        border: thin solid darkgray;
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        box-sizing: border-box;;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+      }
+
+      figcaption {
+        margin-top: 10%;
+      }
+
+      figure img {
+        max-width: 80%;
+        margin-top: 10%;
+      }
+
+      article ol {
+        margin: 1em;
+        font-weight: bold;
+      }
+
+      article table {
+        width: 100%;
+        border-color: #dcdcdc;
+      }
+
+      article table thead tr th {
+        margin: 0;
+        padding: 0 5px;
+        color: white;
+        background-color: black;
+        font-weight: 700;
+        letter-spacing: 3px;
+        border-style: solid;
+      }
+
+      article table tbody tr td {
+        margin: 0;
+        padding: 0, 5px;
+        font-weight: 600;
+        border-style: solid;
+      }
+
+      article table tbody tr.result {
+        background-color: #dcdcdc;
+        font-weight: bold;
+      }
+
+      aside {
+        width: 94%;
+        background-color: white;
+        margin: 20px;
+        padding: 15px;
+        border: 1px solid darkgray;
+        box-shadow: 1px 1px domgray;
+        line-height: 30px;
+      }
+
+      aside h2 {
+        border-left: 2px solid #dcdcdc;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0 10px;
+      }
+
+      aside table {
+        width: 100%;
+        /*height: 100%;*/
+        margin-bottom: 20px;
+        font-size: 13px;
+        border-style: none;
+      }
+
+      .prompt {
+        color: darkgray;
+        padding: 0 0 10px 0;
+      }
+
+      aside table tbody tr td:first-child {
+        width: 30%;
+        text-align: right;
+        font-weight: 600;
+        padding: 0 15px;
+      }
+
+      aside table input {
+        /*height: 20px;*/
+        border: 1px solid darkgray;
+      }
+
+      aside table textarea {
+        width: 90%;
+        height: 100px;
+        outline: none;
+      }
+
+      aside #submit {
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        font-weight: 600;
+        color: white;
+        font-size: 17px;
+        background-color: #2255d0;
+      }
+
+      footer {
+        height: 80px;
+        width: 100%;
+        background-color: #353535;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        line-height: 80px;
+      }
+
+      td {
+        height: 10px;
+      }
+
+      .top {
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <div class="header">
+        <a href="http://ife.baidu.com"><img src="http://ife.baidu.com/asset/img/logo.png"></a>
+        <div class="header-right">
+          <ul>
+            <li><a href="#A1">导航链接一</a></li>
+            <li><a href="#A2">导航链接二</a></li>
+            <li><a href="#A3">导航链接三</a></li>
+            <li><a href="#A4">导航链接四</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <article>
+      <header>
+        <h2><a name="A1">文章一级标题</a></h2>
+        <h3>文章二级标题</h3>
+      </header>
+      <div class="author">
+        <span>文章作者&nbsp;&nbsp;文章发表时间</span>
+      </div>
+      <p>
+      这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>
+      这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>
+      这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+      </p>
+      <img src="http://www.w3school.com.cn/i/eg_tulip.jpg" />
+      <p>
+      这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>
+      这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" target="_blank">这里有一个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+      </p>
+    </article>
+
+    <article>
+      <header>
+        <h2><a name="A2">另一篇文章一级标题</a></h2>
+        <h3>文章二级标题</h3>
+      </header>
+      <div class="author">
+        <span>文章作者&nbsp;&nbsp;文章发表时间</span>
+      </div>
+      <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>
+      这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>
+      这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+      </p>
+      <img src="http://www.w3school.com.cn/i/eg_tulip.jpg"/>
+      <ul>
+        <li>列表项目一</li>
+        <li>列表项目二</li>
+        <li>列表项目三</li>
+      </ul>
+    </article>
+
+    <article>
+      <header>
+        <h2><a name="A3">图片</a></h2>
+      </header>
+      <figure>
+        <figcaption>好看的图片</figcaption>
+        <img src="http://www.w3school.com.cn/i/eg_tulip.jpg"/>
+      </figure>
+      <figure>
+        <figcaption>好看的图片</figcaption>
+        <img src="http://www.w3school.com.cn/i/eg_tulip.jpg"/>
+      </figure>
+      <figure>
+        <figcaption>好看的图片</figcaption>
+        <img src="http://www.w3school.com.cn/i/eg_tulip.jpg"/>
+      </figure>
+      <figure>
+        <figcaption>好看的图片</figcaption>
+        <img src="http://www.w3school.com.cn/i/eg_tulip.jpg"/>
+      </figure>
+      <figure>
+        <figcaption>好看的图片</figcaption>
+        <img src="http://www.w3school.com.cn/i/eg_tulip.jpg"/>
+      </figure>
+      <figure>
+        <figcaption>好看的图片</figcaption>
+        <img src="http://www.w3school.com.cn/i/eg_tulip.jpg"/>
+      </figure>
+      <figure>
+        <figcaption>好看的图片</figcaption>
+        <img src="http://www.w3school.com.cn/i/eg_tulip.jpg"/>
+      </figure>
+      <figure>
+        <figcaption>好看的图片</figcaption>
+        <img src="http://www.w3school.com.cn/i/eg_tulip.jpg"/>
+      </figure>
+      <figure>
+        <figcaption>好看的图片</figcaption>
+        <img src="http://www.w3school.com.cn/i/eg_tulip.jpg"/>
+      </figure>
+      <figure>
+        <figcaption>好看的图片</figcaption>
+        <img src="http://www.w3school.com.cn/i/eg_tulip.jpg"/>
+      </figure>
+    </article>
+
+    <article>
+      <header>
+        <h2><a name="A4">最后一篇文章一级标题</a></h2>
+        <h3>文章二级标题</h3>
+      </header>
+      <div class="author">
+        <span>文章作者 文章发表时间</span>
+      </div>
+      <ol>
+        <li>排名1</li>
+        <li>排名2</li>
+        <li>排名3</li>
+      </ol>
+      <span>下面是一个表格，给表格加了一个<code>border="1"</code>好让你看出是一个表格</span>
+      <table border="1">
+        <thead>
+        <tr align="left">
+            <th>表头</th>
+            <th>表头</th>
+            <th>表头</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="http://www.baidu.com">操作</a></td>
+          </tr>
+          <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="http://www.baidu.com">操作</a></td>
+          </tr>
+          <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="http://www.baidu.com">操作</a></td>
+          </tr>
+          <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="http://www.baidu.com">操作</a></td>
+          </tr>
+          <tr class="result">
+            <td>总计</td>
+            <td colspan="2">1000</td>
+          </tr>
+        </tbody>
+        </table>
+    </article>
+
+    <aside>
+      <header>
+        <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
+      </header>
+      <form>
+        <table>
+          <tbody>
+            <tr>
+              <td>请输入邮箱地址：</td>
+              <td>
+              <input type="text" placeholder="这是一个文本输入框" name="email" />
+              </td>
+            </tr>
+              <tr>
+              <td></td>
+              <td class="prompt">邮箱地址请按要求格式输入</td>
+            </tr>
+            <tr>
+              <td>请输入密码：</td>
+              <td>
+              <input type="password" placeholder="这是一个文本输入框" name="password" />
+              </td>
+            </tr>
+            <tr>
+              <td>请重复输入密码：</td>
+              <td>
+              <input type="password" placeholder="这是一个文本输入框" name="r_password"/>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="prompt">密码请为6-16位英文数字</td>
+            </tr>
+            <tr>
+              <td>性别：</td>
+              <td>
+              <input type="radio" name="sex" value="male" checked/>男
+              <input type="radio" name="sex" value="female"/>女
+              </td>
+            </tr>
+            <tr>
+              <td>城市：</td>
+              <td>
+              <select name="coity">
+                  <option value="001">北京</option>
+                  <option value="002">上海</option>
+                  <option value="003">广州</option>
+                  <option value="004">深圳</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>爱好：</td>
+              <td>
+              <input type="checkbox" value="" />运动
+              <input type="checkbox" value="" />艺术
+              <input type="checkbox" value="" />科学
+              </td>
+            </tr>
+            <tr>
+              <td class="top">个人描述：</td>
+              <td>
+                <textarea name="" id="" cols="20" rows="10">这是一个多行输入框，输入您的个人描述</textarea>
+              </td>
+            </tr>
+        </tbody>
+      </table>
+      <input type="submit" id="submit" value="确认提交">
+    </form>
+    </aside>
+
+    <footer>版权所有&copy</footer>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>三栏式布局</title>
+    <meta charset="UTF-8" />
+    <style>
+        .container {
+            background: #eee;
+            border: 1px solid #999;
+            padding: 20px 160px 20px 240px;
+            min-width: 250px;
+            overflow: auto;
+        }
+        
+        .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        } 
+        .clearfix:after {
+            clear: both;
+        }
+        .clearfix {
+            zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+        }
+
+        .column-1 {
+            width: 200px;
+            background: #fff;
+            float: left;
+            height: 120px;
+            margin-left: -100%;
+            position: relative;
+            left: -220px;
+            border: 1px solid #999;
+            text-align: center;
+        }
+        
+        .column-1:after {
+            display: inline-block;
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;            
+        }
+
+        .center {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .team-logo {
+            width: 80px;
+            height: 80px;
+            vertical-align: top;
+        }
+
+        .team-name {
+            vertical-align: top;
+        }
+        
+        .column-2 {
+            width: 100%;
+            float: left;
+            background: #fff;
+            border: 1px solid #999;
+        }
+        
+        .column-2 .content {
+            padding: 20px;
+        }
+
+        .column-3 {
+            width: 120px;
+            background: #fff;
+            float: right;
+            margin-left: -100%;
+            position: relative;
+            right: -140px;
+            border: 1px solid #999;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .column-3 .team-logo {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="clearfix container">
+        <div class="column-2">
+            <div class="content">
+                没什么特别的意思，就是撸一发
+            </div>
+        </div>
+        <div class="column-1">
+            <div class="center">
+                <img src="" class="team-logo">
+                <span class="team-name">撸一发</span>
+            </div>
+        </div>
+        <div class="column-3">
+            <img src="" alt="" class="team-logo"/>
+            <img src="" alt="" class="team-logo"/>
+            <img src="" alt="" class="team-logo"/>
+            <img src="" alt="" class="team-logo"/>
+        </div>
+    </div>
+</body>
+
+</html>
